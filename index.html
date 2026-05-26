@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sakura Shop 🌸 - Cửa Hàng Trực Tuyến</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="sakura-container" id="sakura-container"></div>
+        <header>
+            <div class="container header-wrapper">
+                <a href="#home" class="logo">
+                    <span>Sakura Shop</span>
+                    <span class="cherry-blossom">🌸</span>
+                </a>
+
+                <nav class="nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="#home" class="nav-link">Trang Chủ</a></li>
+                        <li class="dropdown">
+                            <a href="#products" class="nav-link">Sản Phẩm <span class="arrow">▾</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#products" class="dropdown-item" data-category="all">Tất Cả</a></li>
+                                <li><a href="#products" class="dropdown-item" data-category="phone">Điện Thoại</a></li>
+                                <li><a href="#products" class="dropdown-item" data-category="laptop">Laptop</a></li>
+                                <li><a href="#products" class="dropdown-item" data-category="accessory">Phụ Kiện</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#about" class="nav-link">Về Chúng Tôi</a></li>
+                        <li><a href="#offers" class="nav-link">Khuyến Mãi</a></li>
+                        <li><a href="#contact" class="nav-link">Liên Hệ</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="#cart" class="cart-btn">
+                        <svg
+                            class="cart-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path
+                                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                            ></path>
+                        </svg>
+                        <span class="cart-text">Giỏ Hàng</span>
+                        <span id="cart-count" class="cart-badge">0</span>
+                    </a>
+
+                    <button
+                        class="menu-toggle"
+                        id="menu-toggle"
+                        aria-label="Toggle Menu"
+                    >
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+                <div class="container">
+                    <h2>Chào Mừng Đến Với Cửa Hàng Của Chúng Tôi</h2>
+                    <p>
+                        Khám phá hàng ngàn sản phẩm chất lượng với giá tốt nhất
+                    </p>
+                </div>
+            </section>
+
+            <section id="products" class="products">
+                <div class="container">
+                    <h2>Sản Phẩm Nổi Bật</h2>
+                    <div class="product-grid" id="product-grid"></div>
+                </div>
+            </section>
+
+            <section id="cart" class="cart-section">
+                <div class="container">
+                    <h2>Giỏ Hàng Của Bạn</h2>
+                    <div id="cart-items">
+                        <p>Giỏ hàng trống</p>
+                    </div>
+                    <div class="cart-total">
+                        <h3>Tổng Tiền: <span id="total-amount">0đ</span></h3>
+                        <button id="checkout-btn" class="btn">
+                            Thanh Toán
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <h2>Về Sakura Shop 🌸</h2>
+                    <p>Chúng tôi không chỉ bán sản phẩm, chúng tôi mang đến những trải nghiệm công nghệ tinh tế nhất. Với tâm hồn yêu cái đẹp và sự tỉ mỉ, mỗi sản phẩm tại Sakura Shop đều được tuyển chọn kỹ lưỡng để đảm bảo chất lượng và giá trị bền vững cho khách hàng.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="offers" class="offers-section">
+            <div class="container">
+                <h2>Khuyến Mãi Đặc Biệt 🎁</h2>
+                <div class="offer-grid">
+                    <div class="offer-card">
+                        <h3>Giảm 10% Đơn Đầu</h3>
+                        <p>Nhập mã: SAKURA10</p>
+                    </div>
+                    <div class="offer-card">
+                        <h3>FreeShip Toàn Quốc</h3>
+                        <p>Cho đơn hàng từ 2 triệu đồng</p>
+                    </div>
+                    <div class="offer-card">
+                        <h3>Combo Tiết Kiệm</h3>
+                        <p>Mua Laptop tặng kèm Chuột</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Liên Hệ Với Chúng Tôi 📞</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <p><strong>Địa chỉ:</strong> 123 Đường Hoa Anh Đào, Quận 1, TP. HCM</p>
+                        <p><strong>Hotline:</strong> 1900 123 456</p>
+                        <p><strong>Email:</strong> hello@sakurashop.vn</p>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Họ tên" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Lời nhắn của anh dành cho em..."></textarea>
+                        <button type="submit" class="btn">Gửi Tin Nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-section">
+                        <h4>Sakura Shop 🌸</h4>
+                        <p>Mang đến cho bạn những sản phẩm chất lượng nhất cùng sự tinh tế trong từng chi tiết.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Liên Kết</h4>
+                        <a href="#home">Trang Chủ</a>
+                        <a href="#products">Sản Phẩm</a>
+                        <a href="#cart">Giỏ Hàng</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Hỗ Trợ</h4>
+                        <a href="#">Chính Sách Bảo Hành</a>
+                        <a href="#">Hướng Dẫn Mua Hàng</a>
+                        <a href="#">Liên Hệ</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Sakura Shop. Designed with 🌸 by em.</p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="toast-container" id="toast-container"></div>
+        <div class="menu-overlay" id="menu-overlay"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
