@@ -309,6 +309,3 @@ const checkout = () => {
   dropdownMenu.style.display =
     dropdownMenu.style.display === "none" ? "block" : "none";
 };
-
-const checkButton = document.querySelector(".checkout-button");
-checkButton.addEventListener("click", checkout);
