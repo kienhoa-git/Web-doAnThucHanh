@@ -741,11 +741,12 @@ footer {
         box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 1050;
-        display: block;
+        display: none;
     }
 
     .nav-menu.active {
         right: 0;
+        display: block;
     }
 
     .nav-menu ul {
@@ -797,6 +798,13 @@ footer {
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
         gap: 15px;
         padding: 0 5px;
+    }
+    .header-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: auto 6px;
     }
 
     .product-card {
@@ -868,5 +876,14 @@ footer {
     }
     .cart-total .btn {
         width: 100%;
+    }
+    .cart-text {
+        display: none;
+    }
+    .logo-text {
+        font-size: 27px;
+    }
+    .hero {
+        padding: 20px 0;
     }
 }
