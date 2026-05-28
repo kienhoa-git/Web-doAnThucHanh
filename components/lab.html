@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sakura Shop 🌸 - Cửa Hàng Trực Tuyến</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="style-Lab.css" />
+    </head>
+
+    <body>
+        <div class="sakura-container" id="sakura-container"></div>
+        <header>
+            <div class="container header-wrapper header-mobile">
+                <a href="#home" class="logo">
+                    <span class="logo-text">Sakura Shop</span>
+                    <span class="cherry-blossom">🌸</span>
+                </a>
+
+                <nav class="nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="#home" class="nav-link">Trang Chủ</a></li>
+                        <li class="dropdown checkout-button">
+                            <a
+                                href="../index.html#products"
+                                class="nav-link"
+                                onclick="checkout()"
+                                >Sản Phẩm <span class="arrow">▾</span></a
+                            >
+                            <ul class="dropdown-menu" style="display: none">
+                                <li>
+                                    <a
+                                        href="../index.html#products"
+                                        class="dropdown-item"
+                                        data-category="all"
+                                        >Tất Cả</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="../index.html#products"
+                                        class="dropdown-item"
+                                        data-category="phone"
+                                        >Điện Thoại</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="../index.html#products"
+                                        class="dropdown-item"
+                                        data-category="laptop"
+                                        >Laptop</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="../index.html#products"
+                                        class="dropdown-item"
+                                        data-category="accessory"
+                                        >Phụ Kiện</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../index.html#about" class="nav-link"
+                                >Về Chúng Tôi</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#offers" class="nav-link">Khuyến Mãi</a>
+                        </li>
+                        <li><a href="#contact" class="nav-link">Liên Hệ</a></li>
+                        <li>
+                            <a href="#lab" class="nav-link active"
+                                >Lab thực hành</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="#cart" class="cart-btn">
+                        <svg
+                            class="cart-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path
+                                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                            ></path>
+                        </svg>
+                        <span class="cart-text">Giỏ Hàng</span>
+                        <span id="cart-count" class="cart-badge">0</span>
+                    </a>
+
+                    <button
+                        class="menu-toggle"
+                        id="menu-toggle"
+                        aria-label="Toggle Menu"
+                    >
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="lab-hero">
+                <div class="container">
+                    <h2>🧪 Lab Thực Hành</h2>
+                    <p>
+                        Tổng hợp các bài thực hành từ Lab01 đến Lab08
+                    </p>
+                </div>
+            </section>
+
+            <section id="lab" class="products">
+                <div class="container">
+                    <h2>📚 Danh Sách Lab</h2>
+                    <div class="lab-grid" id="lab-grid">
+                        <!-- Lab01 -->
+                        <div class="lab-card">
+                            <div class="lab-header">
+                                <h3>Lab 01</h3>
+                                <span class="lab-count">3 bài</span>
+                            </div>
+                            <div class="lab-body">
+                                <p>Giới thiệu HTML cơ bản</p>
+                                <div class="lab-buttons">
+                                    <a href="../public/assets/Lab/Lab01/Lab01/Vi_du/index.html" target="_blank" class="lab-btn">📄 Ví dụ</a>
+                                    <a href="../public/assets/Lab/Lab01/Lab01/Vi_du/lab1_bai3.html" target="_blank" class="lab-btn">📄 Bài 3</a>
+                                    <a href="../public/assets/Lab/Lab01/Lab01/Vi_du/lab1_bai4.html" target="_blank" class="lab-btn">📄 Bài 4</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lab02 -->
+                        <div class="lab-card">
+                            <div class="lab-header">
+                                <h3>Lab 02</h3>
+                                <span class="lab-count">5 bài</span>
+                            </div>
+                            <div class="lab-body">
+                                <p>HTML nâng cao - Table & Form</p>
+                                <div class="lab-buttons">
+                                    <a href="../public/assets/Lab/Lab02/Lab02/lab02_bai1.html" target="_blank" class="lab-btn">📄 Bài 1</a>
+                                    <a href="../public/assets/Lab/Lab02/Lab02/lab02_bai2.html" target="_blank" class="lab-btn">📄 Bài 2</a>
+                                    <a href="../public/assets/Lab/Lab02/Lab02/Vi_du_Lab01/lab02_bai3.html" target="_blank" class="lab-btn">📄 Bài 3</a>
+                                    <a href="../public/assets/Lab/Lab02/Lab02/lab02_khung_table.html" target="_blank" class="lab-btn">📄 Khung Table</a>
+                                    <a href="../public/assets/Lab/Lab02/Lab02/Vi_du_Lab01/index.html" target="_blank" class="lab-btn">📄 Ví dụ</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lab03 -->
+                        <div class="lab-card">
+                            <div class="lab-header">
+                                <h3>Lab 03</h3>
+                                <span class="lab-count">4 bài</span>
+                            </div>
+                            <div class="lab-body">
+                                <p>CSS & Định dạng giao diện</p>
+                                <div class="lab-buttons">
+                                    <a href="../public/assets/Lab/Lab03/Lab03/Vi_du/index.html" target="_blank" class="lab-btn">📄 Ví dụ</a>
+                                    <a href="../public/assets/Lab/Lab03/Lab03/Vi_du_Lab01/lab03_bai1.html" target="_blank" class="lab-btn">📄 Bài 1</a>
+                                    <a href="../public/assets/Lab/Lab03/Lab03/Vi_du_Lab01/lab03_bai2.html" target="_blank" class="lab-btn">📄 Bài 2</a>
+                                    <a href="../public/assets/Lab/Lab03/Lab03/Vi_du_Lab01/lab03_bai3.html" target="_blank" class="lab-btn">📄 Bài 3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lab04 -->
+                        <div class="lab-card">
+                            <div class="lab-header">
+                                <h3>Lab 04</h3>
+                                <span class="lab-count">4 bài</span>
+                            </div>
+                            <div class="lab-body">
+                                <p>CSS nâng cao - Layout & Flexbox</p>
+                                <div class="lab-buttons">
+                                    <a href="../public/assets/Lab/Lab04/Lab04/Vi_du/index.html" target="_blank" class="lab-btn">📄 Ví dụ</a>
+                                    <a href="../public/assets/Lab/Lab04/Lab04/Vi_du/lab04_bai1.html" target="_blank" class="lab-btn">📄 Bài 1</a>
+                                    <a href="../public/assets/Lab/Lab04/Lab04/Vi_du/lab04_bai2.html" target="_blank" class="lab-btn">📄 Bài 2</a>
+                                    <a href="../public/assets/Lab/Lab04/Lab04/Vi_du/lab04_bai3.html" target="_blank" class="lab-btn">📄 Bài 3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lab05 -->
+                        <div class="lab-card">
+                            <div class="lab-header">
+                                <h3>Lab 05</h3>
+                                <span class="lab-count">5 bài</span>
+                            </div>
+                            <div class="lab-body">
+                                <p>Responsive Design & Media Queries</p>
+                                <div class="lab-buttons">
+                                    <a href="../public/assets/Lab/Lab05/Lab05/lab05_bai1.html" target="_blank" class="lab-btn">📄 Bài 1</a>
+                                    <a href="../public/assets/Lab/Lab05/Lab05/Bai_2/index.html" target="_blank" class="lab-btn">📄 Bài 2</a>
+                                    <a href="../public/assets/Lab/Lab05/Lab05/Bai_2/lab05_bai2.html" target="_blank" class="lab-btn">📄 Bài 2 (layout)</a>
+                                    <a href="../public/assets/Lab/Lab05/Lab05/Bai_2/lab05_bai3.html" target="_blank" class="lab-btn">📄 Bài 3</a>
+                                    <a href="../public/assets/Lab/Lab05/Lab05/Vi_du/index.html" target="_blank" class="lab-btn">📄 Ví dụ</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lab06 -->
+                        <div class="lab-card">
+                            <div class="lab-header">
+                                <h3>Lab 06</h3>
+                                <span class="lab-count">5 bài</span>
+                            </div>
+                            <div class="lab-body">
+                                <p>JavaScript cơ bản</p>
+                                <div class="lab-buttons">
+                                    <a href="../public/assets/Lab/Lab06/lab6_bai1.html" target="_blank" class="lab-btn">📄 Bài 1</a>
+                                    <a href="../public/assets/Lab/Lab06/Bai_2_Minh_hoa_layout/index.html" target="_blank" class="lab-btn">📄 Bài 2 (layout)</a>
+                                    <a href="../public/assets/Lab/Lab06/Bai_2_Minh_hoa_layout/lab6_bai2.html" target="_blank" class="lab-btn">📄 Bài 2</a>
+                                    <a href="../public/assets/Lab/Lab06/Bai_2_Minh_hoa_layout/lab6_bai3.html" target="_blank" class="lab-btn">📄 Bài 3</a>
+                                    <a href="../public/assets/Lab/Lab06/Vi_du/index.html" target="_blank" class="lab-btn">📄 Ví dụ</a>
+                                    <a href="../public/assets/Lab/Lab06/Vi_du/lab6_menu_responsive.html" target="_blank" class="lab-btn">📄 Menu Responsive</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lab07 -->
+                        <div class="lab-card">
+                            <div class="lab-header">
+                                <h3>Lab 07</h3>
+                                <span class="lab-count">4 bài</span>
+                            </div>
+                            <div class="lab-body">
+                                <p>JavaScript nâng cao - DOM & Events</p>
+                                <div class="lab-buttons">
+                                    <a href="../public/assets/Lab/Lab07/Lab07/Vi_du/index.html" target="_blank" class="lab-btn">📄 Ví dụ</a>
+                                    <a href="../public/assets/Lab/Lab07/Lab07/Vi_du/lab07_bai1.html" target="_blank" class="lab-btn">📄 Bài 1</a>
+                                    <a href="../public/assets/Lab/Lab07/Lab07/demo_bai_2/index.html" target="_blank" class="lab-btn">📄 Bài 2</a>
+                                    <a href="../public/assets/Lab/Lab07/Lab07/demo_bai_2/lab07_bai2.html" target="_blank" class="lab-btn">📄 Bài 2 (chi tiết)</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lab08 -->
+                        <div class="lab-card">
+                            <div class="lab-header">
+                                <h3>Lab 08</h3>
+                                <span class="lab-count">5 bài</span>
+                            </div>
+                            <div class="lab-body">
+                                <p>jQuery & Thư viện CSS</p>
+                                <div class="lab-buttons">
+                                    <a href="../public/assets/Lab/Lab08/lab08_bai1.html" target="_blank" class="lab-btn">📄 Bài 1</a>
+                                    <a href="../public/assets/Lab/Lab08/lab08_bai2.html" target="_blank" class="lab-btn">📄 Bài 2</a>
+                                    <a href="../public/assets/Lab/Lab08/lab08_bai3.html" target="_blank" class="lab-btn">📄 Bài 3</a>
+                                    <a href="../public/assets/Lab/Lab08/Lab08/Vi_du_1/index.html" target="_blank" class="lab-btn">📄 Ví dụ 1</a>
+                                    <a href="../public/assets/Lab/Lab08/Lab08/Vi_du_2/index.html" target="_blank" class="lab-btn">📄 Ví dụ 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section class="products" style="padding-top: 0;">
+            <div class="container" style="text-align: center;">
+                <p style="color: #718096; font-size: 1.05rem;">
+                    🌸 Chọn một bài tập bên trên để xem nội dung thực hành
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-section">
+                        <h4>Sakura Shop 🌸</h4>
+                        <p>
+                            Mang đến cho bạn những sản phẩm chất lượng nhất cùng
+                            sự tinh tế trong từng chi tiết.
+                        </p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Liên Kết</h4>
+                        <a href="../index.html">Trang Chủ</a>
+                        <a href="../index.html#products">Sản Phẩm</a>
+                        <a href="#lab">Lab thực hành</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Hỗ Trợ</h4>
+                        <a href="#">Chính Sách Bảo Hành</a>
+                        <a href="#">Hướng Dẫn Mua Hàng</a>
+                        <a href="#">Liên Hệ</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Sakura Shop. Designed with 🌸 by em.</p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="toast-container" id="toast-container"></div>
+        <div class="menu-overlay" id="menu-overlay"></div>
+        <script src="../script.js"></script>
+    </body>
+</html>

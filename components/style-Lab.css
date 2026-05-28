@@ -1,0 +1,107 @@
+.lab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    padding: 20px 0;
+}
+.lab-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+.lab-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medium);
+}
+.lab-header {
+    background: var(--primary-gradient);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lab-header h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+.lab-count {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    background: rgba(255,255,255,0.2);
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+.lab-body {
+    padding: 16px 20px 20px;
+}
+.lab-body p {
+    color: #718096;
+    font-size: 0.85rem;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+.lab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.lab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 14px;
+    background: var(--light-gray);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--dark);
+    font-size: 0.82rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+.lab-btn:hover {
+    background: var(--primary-gradient);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-1px);
+}
+.lab-hero {
+    background: linear-gradient(135deg, #ff758c 0%, #764ba2 100%);
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+}
+.lab-hero h2 {
+    font-size: clamp(1.8rem, 3vw + 1rem, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+.lab-hero p {
+    font-size: clamp(1rem, 0.5vw + 0.9rem, 1.1rem);
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .lab-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .lab-header {
+        padding: 16px;
+    }
+    .lab-body {
+        padding: 12px 16px 16px;
+    }
+    .lab-buttons {
+        gap: 6px;
+    }
+    .lab-btn {
+        padding: 5px 10px;
+        font-size: 0.78rem;
+    }
+}
